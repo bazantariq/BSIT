@@ -37,7 +37,8 @@ public class LoginActivity extends AppCompatActivity {
         tv1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent iv = new Intent(LoginActivity.this, SignupActivity.class);
+                startActivity(iv);
             }
         });
 
@@ -67,10 +68,10 @@ public class LoginActivity extends AppCompatActivity {
                                 if (task.isSuccessful()) {
                                     Intent iv = new Intent(LoginActivity.this, HomeActivity.class);
                                     startActivity(iv);
+                                    finish();
                                 } else {
                                     Toast.makeText(LoginActivity.this, "Email or Password incorrect.", Toast.LENGTH_SHORT).show();
                                 }
-
                             }
                         });
             }

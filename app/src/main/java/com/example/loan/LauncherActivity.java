@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -31,9 +32,13 @@ public class LauncherActivity extends AppCompatActivity {
                 if(user!=null){
                     Intent i= new Intent(LauncherActivity.this, HomeActivity.class);
                     startActivity(i);
+                    finish();
+
                 }else {
                     Intent i = new Intent(LauncherActivity.this, LoginActivity.class);
                     startActivity(i);
+                    finish();
+
                 }
             }
         },5000);
