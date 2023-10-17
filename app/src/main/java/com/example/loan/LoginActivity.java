@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,7 +21,8 @@ import com.google.firebase.auth.FirebaseAuth;
 public class LoginActivity extends AppCompatActivity {
     EditText et1, et2;
     Button bt1;
-    TextView tv1;
+    TextView tv1,tv2;
+    CheckBox checkBox;
     private FirebaseAuth mAuth;
 
 
@@ -32,8 +34,18 @@ public class LoginActivity extends AppCompatActivity {
         et2 = findViewById(R.id.password);
         bt1 = findViewById(R.id.login_btn);
         tv1 = findViewById(R.id.signup_tv);
+        tv2 = findViewById(R.id.terms);
+        checkBox= findViewById(R.id.checkbox);
+
         mAuth = FirebaseAuth.getInstance();
 
+        tv2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent iv = new Intent(LoginActivity.this, TermsActivity.class);
+                startActivity(iv);
+            }
+        });
         tv1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,6 +71,10 @@ public class LoginActivity extends AppCompatActivity {
                 }
                 if (!Patterns.EMAIL_ADDRESS.matcher(username).matches()) {
                     et1.setError("Invalid Email Format");
+                    return;
+                }
+                if (!checkBox.isChecked()) {
+                    tv2.setError("Accept");
                     return;
                 }
                 mAuth.signInWithEmailAndPassword(username, passwrod)
