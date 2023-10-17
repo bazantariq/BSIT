@@ -3,6 +3,8 @@ package com.example.loan;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
@@ -56,6 +58,31 @@ public class TermsActivity extends AppCompatActivity implements SwipeRefreshLayo
             public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error) {
                 Snackbar.make(view,"Opps!Something Went Wrong.",Snackbar.LENGTH_INDEFINITE)
                         .show();
+            }
+
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+                if(url.startsWith("tel:") || url.startsWith("whatsapp:")) {
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(url));
+                    startActivity(intent);
+                    return true;
+                }
+
+                if(url.startsWith("market") || url.startsWith("https://play")) {
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(url));
+                    startActivity(intent);
+                    return true;
+                }
+
+                if(url.startsWith("com.facebook.katana") || url.startsWith("https://facebook")) {
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(url));
+                    startActivity(intent);
+                    return true;
+                }
+                return false;
             }
         });
     }
