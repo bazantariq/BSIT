@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "679836996985",
+    "project_id": "loan-9e08c",
+    "storage_bucket": "loan-9e08c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679836996985:android:c9a20c4b8e4bc647d54ba8",
+        "android_client_info": {
+          "package_name": "tu.edu.pk.resulto"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYouRo94cpfdmoZm3bxI1-Dae8RlfdtSQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

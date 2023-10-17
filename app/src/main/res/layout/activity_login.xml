@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:gravity="center"
+    tools:context=".LoginActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border_shape"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textSize="36sp"
+                android:textColor="@color/purple"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/username"
+                android:background="@drawable/border_shape"
+                android:layout_marginTop="40dp"
+                android:padding="8dp"
+                android:hint="Username"
+                android:inputType="textEmailAddress"
+                android:drawableLeft="@drawable/baseline_person"
+                android:drawablePadding="8dp"
+                android:textColor="@color/purple"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:background="@drawable/border_shape"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:hint="Password"
+                android:inputType="numberPassword"
+                android:drawableLeft="@drawable/baseline_lock"
+                android:drawablePadding="8dp"
+                android:textColor="@color/purple"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Login"
+                android:id="@+id/login_btn"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Create New Account"
+                android:id="@+id/signup_tv"
+                android:textSize="18sp"
+                android:textColor="@color/purple"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
