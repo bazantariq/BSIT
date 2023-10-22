@@ -45,4 +45,5 @@ dependencies {
     implementation ("com.google.guava:guava:31.1-android")
     implementation ("com.airbnb.android:lottie:3.4.0")
     implementation ("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01")
+    implementation ("com.github.hellosagar:ProgressButton:0.35")
 }

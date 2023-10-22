@@ -78,16 +78,22 @@
                     android:layout_height="wrap_content"/>
             </LinearLayout>
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:text="Login"
+            <dev.sagar.progress_button.ProgressButton
                 android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:corner_radius="50dp"
                 android:textSize="18sp"
+                app:default_text="Login"
+                app:disabled_color="#F44336"
+                app:finish_text="Login Finish"
+                app:finished_color="#E91E63"
+                app:is_vibrate="false"
+                app:pressed_color="#5C5C5A"
                 />
 
             <TextView
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
