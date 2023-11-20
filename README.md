@@ -27,11 +27,11 @@ This repository is still under development and I will continue to add more featu
 
 ## Screenshots
 <p>
-<img src="https://github.com/bazantariq/DemoLoanApp/assets/35604864/9ef6fa0b-add7-4523-a27a-6920828559e7.png" alt="Launcher" width = "225" >
- <img src="https://github.com/bazantariq/DemoLoanApp/assets/35604864/9ef6fa0b-add7-4523-a27a-6920828559e7.png" alt="Launcher" width = "225" >
-  <img src="https://github.com/bazantariq/DemoLoanApp/assets/35604864/9ef6fa0b-add7-4523-a27a-6920828559e7.png" alt="Launcher" width = "225" >
-<img src="https://github.com/bazantariq/DemoLoanApp/assets/35604864/279b7169-c415-409a-a443-90647c139328.png" alt="Dashboard-1" width = "225" >
-<img src="https://github.com/bazantariq/DemoLoanApp/assets/35604864/10fa381e-51ea-49a4-8791-25295d1a67f3.png" alt="Dashboard-2" width = "225">
+<img src="https://github.com/bazantariq/DemoLoanApp/assets/35604864/9ef6fa0b-add7-4523-a27a-6920828559e7.png" alt="Launcher" width = "200" >
+ <img src="https://github.com/bazantariq/DemoLoanApp/assets/35604864/9ef6fa0b-add7-4523-a27a-6920828559e7.png" alt="Launcher" width = "200" >
+  <img src="https://github.com/bazantariq/DemoLoanApp/assets/35604864/9ef6fa0b-add7-4523-a27a-6920828559e7.png" alt="Launcher" width = "200" >
+<img src="https://github.com/bazantariq/DemoLoanApp/assets/35604864/279b7169-c415-409a-a443-90647c139328.png" alt="Dashboard-1" width = "200" >
+<img src="https://github.com/bazantariq/DemoLoanApp/assets/35604864/10fa381e-51ea-49a4-8791-25295d1a67f3.png" alt="Dashboard-2" width = "200">
 
 </p>
 
