@@ -1,6 +1,6 @@
 # DemoLoanApp
 
-Demo Loan App (Both frontend and backend) created with Android Native and Firebase.
+Demo Loan App (Both frontend and backend) created with Android Native and Firebase. This is a demo application which I have build during teaching to IT-5th at Thal University Bhakkar in Fall-2023
 
 [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://www.youtube.com/@codetrix786)
 
