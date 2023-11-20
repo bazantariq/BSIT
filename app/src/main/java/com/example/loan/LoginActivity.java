@@ -23,7 +23,7 @@ import dev.sagar.progress_button.ProgressButton;
 public class LoginActivity extends AppCompatActivity {
     EditText et1, et2;
     ProgressButton progress_btn;
-    TextView tv1,tv2;
+    TextView tv1, tv2;
     CheckBox checkBox;
     private FirebaseAuth mAuth;
 
@@ -36,8 +36,8 @@ public class LoginActivity extends AppCompatActivity {
         et2 = findViewById(R.id.password);
         tv1 = findViewById(R.id.signup_tv);
         tv2 = findViewById(R.id.terms);
-        checkBox= findViewById(R.id.checkbox);
-        progress_btn= findViewById(R.id.login_btn);
+        checkBox = findViewById(R.id.checkbox);
+        progress_btn = findViewById(R.id.login_btn);
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -85,12 +85,13 @@ public class LoginActivity extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
                                     progress_btn.finished();
-                                    Intent iv = new Intent(LoginActivity.this, HomeActivity.class);
+                                    Intent iv = new Intent(LoginActivity.this, MainActivity.class);
                                     startActivity(iv);
                                     finish();
                                 } else {
                                     progress_btn.enable();
-                                    Toast.makeText(LoginActivity.this, "Email or Password incorrect.", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(LoginActivity.this,
+                                            "Email or Password incorrect.", Toast.LENGTH_SHORT).show();
                                 }
                             }
                         });

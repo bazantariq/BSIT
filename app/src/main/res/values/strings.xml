@@ -1,3 +1,37 @@
 <resources>
     <string name="app_name">Loan</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_playstore">Playstore</string>
+    <string name="action_logout">Logout</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="now">Verify Now</string>
+    <string name="verify_text">Verify your contact number, please get verification code which we have sent to your mobile number.</string>
+    <string name="set_account">Set Account</string>
+    <string name="account_detials">Provide your account details for disbursement of loan after a successful application</string>>
+    <string name="account">Account Details</string>
+    <string name="calc">Loan Calculator</string>
+    <string name="calc_details">You can calculate your loan payment even before applying for loan. Information such as service rate (Annual), Interest rate (Annual), duration of your loan (In Days) and amount rate required.</string>
+    <string name="calcu">Calculate</string>
+    <string name="apply">Apply For Loan</string>
+    <string name="apply_desc">Amount Requested:\nService Rate (Annually):\nDuration:\nAmountRepayable:</string>
+    <string name="reapply">Re-Apply</string>
+    <string name="status">Status</string>
+    <string name="updates">Loan Updates</string>
+    <string name="issued">Total Loans Issued So Far</string>
+    <array name="steps">
+        <item>Start</item>
+        <item>Applied</item>
+        <item>Pending</item>
+        <item>Approved</item>
+    </array>
+
+
 </resources>

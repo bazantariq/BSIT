@@ -17,10 +17,12 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+import dev.sagar.progress_button.ProgressButton;
+
 public class SignupActivity extends AppCompatActivity {
 
     EditText name, username, password;
-    Button signup;
+    ProgressButton signup;
     TextView login;
     FirebaseAuth firebaseAuth;
 
@@ -64,17 +66,19 @@ public class SignupActivity extends AppCompatActivity {
                     username.setError("Invalid Email Format");
                     return;
                 }
-
+                signup.loading();
                 firebaseAuth.createUserWithEmailAndPassword(etusername,etpass)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                if(task.isSuccessful()){
-                                   Intent i= new Intent(SignupActivity.this, HomeActivity.class);
+                                   Intent i= new Intent(SignupActivity.this, MainActivity.class);
                                    startActivity(i);
                                    finish();
+                                   signup.disable();
                                    Toast.makeText(SignupActivity.this, "Thanks for being awesome!", Toast.LENGTH_SHORT).show();
                                }else {
+                                   signup.enable();
                                    Toast.makeText(SignupActivity.this, "Opps! Something went wrong.", Toast.LENGTH_SHORT).show();
                                }
                             }

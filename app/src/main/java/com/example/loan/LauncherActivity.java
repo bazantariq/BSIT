@@ -30,7 +30,7 @@ public class LauncherActivity extends AppCompatActivity {
             @Override
             public void run() {
                 if(user!=null){
-                    Intent i= new Intent(LauncherActivity.this, HomeActivity.class);
+                    Intent i= new Intent(LauncherActivity.this, MainActivity.class);
                     startActivity(i);
                     finish();
 

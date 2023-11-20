@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:679836996985:android:c9a20c4b8e4bc647d54ba8",
+        "mobilesdk_app_id": "1:679836996985:android:3a0055fab67143a5d54ba8",
         "android_client_info": {
-          "package_name": "tu.edu.pk.resulto"
+          "package_name": "com.example.loan"
         }
       },
       "oauth_client": [],
