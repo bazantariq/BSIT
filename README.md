@@ -1,8 +1,8 @@
 # DemoLoanApp
 
-Instagram Clone (Both frontend and backend) created with Flutter and Firebase.
+Demo Loan App (Both frontend and backend) created with Android Native and Firebase.
 
-[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/mohak1283)
+[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)]([https://saythanks.io/to/mohak1283](https://www.youtube.com/channel/codetrix786))
 
 ## Show some :heart: and star the repo to support the project.
 
