@@ -8,9 +8,10 @@
         android:title="@string/action_playstore"
         app:showAsAction="always" />
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_logout"
         android:orderInCategory="100"
         android:icon="@drawable/logout"
         android:title="@string/action_logout"
         app:showAsAction="always" />
+
 </menu>
