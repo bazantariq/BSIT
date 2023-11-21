@@ -27,7 +27,7 @@ This repository is still under development and I will continue to add more featu
 
 ## Screenshots
 <p>
-<img src="![](app/src/main/res/drawable/bank.png)">
+<img src="app/src/main/res/drawable/bank.png">
 <img src="https://github.com/bazantariq/DemoLoanApp/assets/35604864/9ef6fa0b-add7-4523-a27a-6920828559e7.png" alt="Launcher" width = "220" >
 <img src="https://github.com/bazantariq/DemoLoanApp/assets/35604864/28111519-b9f0-4cc6-9f0e-87fe5a039216.png" alt="Login" width = "220" >
 <img src="https://github.com/bazantariq/DemoLoanApp/assets/35604864/db0ded3c-5dee-4c02-a1d5-6c7a712ad4e7.png" alt="Signup" width = "220" >
